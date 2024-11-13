@@ -1,0 +1,17 @@
+ &cntrl
+  imin=0, ntx=5, irest=1,
+  tol=0.0000001, nstlim=77737250, dt=0.002,
+  ntf=1, ntc=2, ntb=2, ntp=1,
+  pres0=1.0, taup=1.0, ntt=3,
+  temp0=300.0, ntpr=250, ntwx=250,
+  ntwr=250, cut=10.0, gamma_ln=1.0,
+  ig=-1, iwrap=1,
+  igamd=10, irest_gamd=1,
+  ntcmd=1000000, nteb=1000000, ntave=50000,
+  ntcmdprep=200000, ntebprep=20000,
+  sigma0P=6.0, iEP=2,
+  icfe=1, ifsc=1, gti_cpu_output=0, gti_add_sc=1,
+  timask1 =':141', scmask1=':141',
+  nlig = 1
+&end
+~        

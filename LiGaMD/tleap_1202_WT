@@ -1,0 +1,18 @@
+source leaprc.gaff
+source leaprc.protein.ff99SBdisp
+source leaprc.water.tip4pd_disp
+
+loadamberparams 1202.frcmod
+loadoff 1202.lib
+
+complex = loadpdb complex.pdb 
+solvatebox complex TIP4PDBOX 15.0
+
+charge complex
+addions complex Na+ 150
+addions complex Cl- 141
+setbox complex vdw
+
+saveamberparm complex wt_1202.prmtop wt_1202.rst7
+savepdb complex wt_1202.pdb
+

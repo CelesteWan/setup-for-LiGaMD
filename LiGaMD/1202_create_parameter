@@ -1,0 +1,5 @@
+ source leaprc.gaff 
+ UNK = loadmol2 1202.mol2
+ loadamberparams 1202.frcmod
+ saveoff UNK 1202.lib
+ saveamberparm UNK 1202.prmtop 1202.rst7

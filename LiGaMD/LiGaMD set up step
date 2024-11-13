@@ -1,0 +1,19 @@
+Using PAL-1202 and 1xq8.pdb alpha-synuclein as an example
+
+1. add hydrogen bond to small molecule(PAL) and energy minimize by using maestro (save mol2 and pdb file)
+2. download 1xq8.pdb alpha-synuclein monomer file
+3. put PAL and alpha-synuclein in the same pdb file with 10 angstrom distance.
+   -> Get complex.pdb
+   
+4. create parameter for PAL
+   -antechamber -i 1202_h.mol2 -fi mol2 -o 1202.mol2 -fo mol2 -c bcc -s 2 
+   -parmchk2 -i 1202.mol2 -f mol2 -o 1202.frcmod 
+   -tleap -f 1202_create_parameter
+
+5. Get prmtop and rst for the complex.pdb 
+   -tleap_1202_WT_1 
+    Get box size and charge, calculate the ion for Cl, and NA
+    Modified the Cl, NA 
+   -rerun tleap_1202_WT_1
+    
+  
